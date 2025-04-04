@@ -1,0 +1,86 @@
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); 
+    gap: 1rem; 
+    padding: 1rem 0; 
+}
+
+.card {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.01);
+}
+
+.card-header {
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 1.25rem;
+}
+
+.card-body {
+    padding: 1rem;
+}
+
+.card-body p {
+    margin: 0.5rem 0;
+    font-size: 1rem;
+}
+
+.card-body .btn {
+    width: 100%;
+}
+
+.card-body .btn-warning, .card-body .btn-danger {
+    padding: 0.75rem;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+}
+
+.card-body .btn-warning .fa-edit, .card-body .btn-danger .fa-trash-alt {
+    color: white; 
+}
+
+.card-body .text-center {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 2rem;
+    color: #333;
+}
+
+button {
+    font-size: 1.125rem;
+    font-weight: bold;
+    padding: 0.75rem 1.5rem;
+}
+
+.my-4 {
+    margin-top: 2rem !important;
+    margin-bottom: 2rem !important;
+}
+
+button:focus {
+    outline: none;
+}
+
+button:hover {
+    opacity: 0.8;
+}
